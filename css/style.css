@@ -1,0 +1,1550 @@
+
+/****************************Fonts********************
+******************************************************/
+@font-face {
+    font-family: 'pokedex';
+    src:url(/fonts/Pokemon.ttf)
+}
+  .itim-regular {
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .indie-flower-regular {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /*****Icons*/
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+
+
+
+
+/**********************************************************************************************************************************************************************************
+*********************************************************************************                Pokedex Page                 *****************************************************
+***********************************************************************************************************************************************************************************/
+
+
+/**********************Header******************/
+
+header{
+  background-image: url(/images/pokemon.jpg);
+  background-size: cover;
+  padding: 150px;
+  background-position: center center;
+  background-repeat: no-repeat;  
+}
+
+header h1{
+  color:rgb(255, 255, 255);
+  font-family: 'pokedex';
+  text-align: left;
+  font-size: 75pt;   
+}
+
+.buttonHeader{
+  background-color: #000;
+  border: solid #FFCB05;
+  color: #FFCB05;
+  padding: .4em;
+  margin: 1em;
+  border-radius: 5px;
+  font-size: 20pt;
+}
+
+.buttonHeader:hover{
+  background-color:#FFCB05 ;
+  color: #000;
+}
+
+/*****Buttons nav**********/
+.wrapper{
+  background-image: url(/images/black.avif);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+nav{
+  margin-bottom: 10em;
+}
+
+.headerButtons{
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 1em;
+  border: solid #FFCB05;
+  border-radius: 15px;
+  padding: 1em;
+  width: 1251px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#search-bar{
+  background-color: white;
+  border: solid #FFCB05;
+  border-radius:25px;
+  height:3.5em;
+  width:400px;
+}
+
+#search-bar::placeholder {
+  color:#FFCB05;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+   
+.buttonBanner{
+  background-color: #FFCB05;
+  border: solid white;
+  border-radius: 25px;
+  height: 3.5em;
+  width: 200px;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Indie Flower", cursive;
+  font-size: 13pt;
+}
+  
+.buttonBanner:hover {
+  animation: bounce 0.5s ease-in-out;
+}
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+h1{
+  color:#FFCB05;
+  font-family: 'pokedex';
+  text-align: center;
+  padding: 0%;
+  font-size: 80pt;
+  margin-bottom: .5em;
+  padding-top: 30px;  
+}
+
+.heading1{
+  color:#FFCB05;
+  font-size: 80pt;
+  margin-bottom: 50px;
+}
+
+/*************************  Display Pokemons    *******************/
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.card {
+  background-color: #000;
+  color: #fff;
+  border: 5px solid #FFCB05;
+  border-radius: 35px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  width: 280px;
+  height: 450px;
+  cursor: pointer;
+}
+
+.wrappokeball{
+  background-image: url(/images/pokebola.svg);
+  background-size: cover;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+    
+  .wrappokeball img{
+      width: 3000px;
+      height: 300px;
+    }
+
+
+
+.card{
+  padding-bottom: 10px;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 35px;
+  text-align: center;
+  color: #FFCB05;
+}
+
+.card p {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 1px;
+}
+
+#bulbasaur{
+  height: 100px;
+  width: 100px;
+}
+/**************************  Categories  ************************/
+.categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+  padding-top: 1em;
+  font-family: "Indie Flower", cursive; 
+}
+
+/******** Grass *************/
+.grass {
+  background-color: #9BBE40;
+  border: none;
+  border-radius: 25px;
+  width: 110px;
+  height: 35px;
+  display: inline-block; 
+  color: white;
+  font-family: "Indie Flower", cursive; 
+}
+.grass p{
+  font-size:20pt ;
+ margin: 0%; 
+ text-align: center;
+}
+
+/******** Poison *************/
+.poison {
+  background-color: #B47BBA;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  width: 110px;
+  height: 35px;
+  display: inline-block;
+  font-family: "Indie Flower", cursive; 
+}
+.poison p{
+  font-size:20pt ;
+  margin: 0%; 
+  text-align: center;
+}
+
+/******** Fire *************/
+.fire{
+  background-color: #EA4B27;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  width: 110px;
+  height: 35px;
+  display: inline-block; 
+}
+.fire p{
+  font-size:20pt ;
+  margin: 0%; 
+}
+
+/******** Flying *************/
+.flying{
+background-color: #88BAD4;
+color: white;
+border: none;
+border-radius: 25px;
+width: 110px;
+height: 35px;
+display: inline-block; 
+}
+.flying p{
+font-size:20pt ;
+margin: 0%; 
+}
+
+/******** Water *************/
+.water{
+background-color: #4192DF;
+color: white;
+border: none;
+border-radius: 25px;
+width: 110px;
+height: 35px;
+display: inline-block; 
+}
+.water p{
+font-size:20pt ;
+margin: 0%; 
+}
+
+/******** Bug *************/
+.bug{
+background-color: #5CB147;
+color: white;
+border: none;
+border-radius: 25px;
+width: 110px;
+height: 35px;
+display: inline-block; 
+}
+.bug p{
+font-size:20pt ;
+margin: 0%; 
+}
+
+/******** Normal *************/
+.normal{
+background-color: #A0A0A0;
+color: white;
+border: none;
+border-radius: 25px;
+width: 110px;
+height: 35px;
+display: inline-block; 
+}
+.normal p{
+font-size:20pt ;
+margin: 0%; 
+}
+
+  /***********Show more button*****************/
+
+  .showMoreContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .showMore{
+    width: 180px;
+    height: 50px;
+    margin-top: 2em;
+    flex-shrink: 0;
+    background-color: #FFCB05; 
+    color: #000; 
+    border: white;
+    border-radius: 25px; 
+    font-size: 20pt; 
+    font-weight: bold;
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s;
+   margin-bottom: 15px;
+  }
+  
+  .showMore:hover {
+    background-color: black;
+    color:white;
+    animation: pulse 0.5s ease-in-out;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /**********************   Footer   *****************/
+  footer {
+    width: 100%;
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+    color: #FFCB05;
+    font-size: 20pt;
+  }
+  
+  footer p {
+    margin: 0;
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+
+
+  
+  /***********************************************************************************************************************************************************************************************
+  ***********************************************************************                 Pokemon Page              ******************************************************************************
+  ************************************************************************************************************************************************************************************************/
+.h1Pokemon{
+  color: #FFCB05;
+  font-size: 80pt;
+}
+
+.h2Pokemon{
+  color:white;
+  padding-top:15px ;
+  font-size: 50pt;
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+}
+
+.h3Pokemon{
+  color: white;
+  font-size: 50pt;
+  text-align: center;
+}
+
+ h3{
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #090909;
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #FFF;
+  font-size: 60px;
+  text-align: center;
+}
+
+  /*****************Caught****************/
+.caught{
+  border-radius: 60.5px;
+  border: 3.63px solid #FFCB05;
+  background: #000;
+  color:#FFF;
+  width: 325px;
+  height: 70px;
+  float: right;
+}
+  .caught p{
+    font-size: 40px;
+    text-align: center;
+    font-family: "Itim", cursive;
+    margin: 0 auto;
+  
+}
+
+
+  /*******************Info-container******/
+.info-container{
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  justify-content: center;
+}
+
+/*******************Img/Pokemon**********/
+.img-pokemon{
+  background-image:url(/images/pokebola-back.svg) ;
+  background-size: 350px 450px; 
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+  .img-pokemon img{
+   width: 550px;
+  }
+
+
+.type{
+  background-image: url(/images/type.svg);
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 300px;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+  .type h4{
+    font-family: "Itim", cursive;
+    color: #FFCB05;
+    font-size: 55px;
+    text-align: center;
+    padding-top: 75px;  
+  }
+
+/**************************Category************/
+.category{
+  background-image: url(/images/right-info.svg);
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 300px;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding-top: 65px;
+}
+    .category h4{
+      font-family: "Itim", cursive;
+      color: #FFCB05;
+      font-size: 55px;
+      text-align: center;
+      margin-bottom: 0;  
+      margin-bottom: 0;
+    }
+    .category p{
+      font-family: "Itim", cursive;
+      color:#FFF;
+      font-size: 30px;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+       
+    }
+    .categoy li{
+      font-family: "Itim", cursive;
+      color:#FFF;
+      font-size: 30px;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+ 
+
+.weight{
+  background-image: url(/images/Rectangle\ weight.svg);
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 500px;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+  .weight h4{
+    font-family: "Itim", cursive;
+    color: #FFCB05;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 0;  
+  }
+
+ .weight p{
+    font-family: "Itim", cursive;
+    color:#FFF;
+    font-size: 40px;
+    text-align: center;   
+  }
+
+
+ /**********Stats section********/
+ .stats-container{
+  background-color: #000;
+  border:#FFCB05 solid 2px;
+  border-radius: 5px;
+  width: 1450px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 25px;
+ }
+
+  .stats-container h4{
+    color: #FFCB05;
+    font-family: Itim;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: normal;
+    padding-bottom: 40px;
+  }
+
+.h{
+  color: #FFCB05;
+  font-family: Itim;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: normal;
+}
+.p{
+  color: white;
+  text-align: center;
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  line-height: normal;
+}
+
+.stats{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  grid-row-gap: 60px;  
+}
+
+.stats-category{
+  display: flex;
+  flex-direction: row ;
+  gap:10px 
+}
+
+.stats-title{
+  text-align: center;
+}
+
+.stats-total{
+  display: flex;
+  flex-direction: row;
+  gap:5px;
+  justify-content: flex-end;
+  padding-right: 25px;
+}
+
+/*****Evolutions******************/
+
+.section-evolution{
+  margin-top: 55px;
+  width: 700px;
+  height: 451px;
+  border-radius: 20px;
+  border: 5px solid #FFCB05;
+  background: #000;
+  margin: 0 auto; 
+  margin-top: 50px;
+}
+
+.evolution-container{
+  margin-top: 75px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 1px;
+}
+.evolution-container p{
+    text-align: center;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    line-height: normal; 
+    color: white;
+  }
+  .evolution-container h5{
+    text-align: center;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    color:  #FFCB05;
+    font-style: normal;
+    font-size: 40px;
+    line-height: normal;
+    }
+  
+
+.evolution-wrap{
+  flex-direction: column;
+  display: flex;
+ 
+  }
+  
+.pokemon-image {
+  height: 100px;
+  width: 100px;
+}
+  
+.pokemon-info {
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  display: flex;
+}
+  
+.pokemon-number {
+  color: #FFCB05;
+  font-family: "Itim", cursive; 
+  font-size: 40px;
+}
+  
+.pokemon-name {
+  font-size: 40px;
+  color: #fff;
+  font-family: "Itim", cursive;
+}
+  
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #FFCB05;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  font-family: "Indie Flower", cursive;
+  }
+
+  /**************Buttons***************/
+  
+.buttons{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  }
+
+.next{
+  width: 252px;
+  height: 60px;
+  margin-top: 2em;
+  flex-shrink: 0;
+  background-color: #FFCB05; 
+  color: #000; 
+  border: white;
+  border-radius: 25px; 
+  font-size: 20pt; 
+  font-weight: bold;
+  cursor: pointer; 
+  transition: background-color 0.3s ease;  
+  }
+  
+.showMore:hover {
+  background-color: black;
+  color:white;
+  }
+
+
+ 
+
+/******************************************************************************************************************************************************************************************************
+****************************************************************                         * TABLET VERSION *                     ***********************************************************************
+******************************************************************************************************************************************************************************************************/
+
+
+/**********************************************************************************          Pokemon Page              **************************************************************************
+**************************************************************************************************************************************************************************************************/
+
+
+@media only screen and (min-width: 768px) and (max-width: 1020px) {
+
+  /*********************** Header *****************/
+header {
+  padding: 30px; 
+}
+header h1 {
+  font-size: 40pt; 
+}
+
+  /********************* Buttons nav ************************/
+.headerButtons{
+  width: 700px;
+  height: 170px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1em;
+  padding: .5em;    
+}
+
+#search-bar{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+}
+
+.heading1{
+  margin-top: 300px;
+}
+
+.buttonBanner:hover {
+  animation: bounce 0.5s ease-in-out;
+}
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+h1{
+  color:#FFCB05;
+  font-family: 'pokedex';
+  text-align: center;
+  padding: 0%;
+  font-size: 80pt;
+  margin-bottom: .5em;
+}
+.hh1{
+  padding-top: 180px;
+}
+
+/*************************  Display Pokemons    *******************/
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  width: 280px;
+  height: 450px;  
+}
+
+.wrappokeball {
+  height: 270px;
+}
+  .wrappokeball img{
+  width: 3000px;
+  height: 300px;
+  }
+
+.card h2 {
+  margin-top: 0;
+  font-size: 35px;
+}
+
+.card p {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+/**************************  Categories  ************************/
+.categories {
+  gap: 4px;
+  padding-top: 1em;
+  margin: 0 auto;
+}
+/******** Grass *************/
+.grass {
+  width: 110px;
+  height: 40px;
+}
+.grass p{
+  font-size:20pt ;
+ margin: 0%; 
+}
+
+/******** Poison *************/
+.poison {
+  width: 110px;
+  height: 40px;
+   
+}
+.poison p{
+  font-size:20pt ;
+  margin: 0%; 
+}
+
+/******** Fire *************/
+.fire{
+  width: 110px;
+  height: 40px; 
+}
+
+.fire p{
+  font-size:20pt ;
+  margin: 0%; 
+}
+
+/******** Flying *************/
+.flying{
+width: 110px;
+height: 40px;
+}
+.flying p{
+font-size:20pt ;
+margin: 0%; 
+}
+
+/******** Water *************/
+.water{
+width: 110px;
+height: 40px; 
+}
+.water p{
+font-size:20pt ;
+margin: 0%; 
+}
+
+/******** Bug *************/
+.bug{
+width: 110px;
+height: 40px;
+}
+.bug p{
+font-size:20pt ;
+margin: 0%; 
+}
+/******** Normal *************/
+.normal{
+width: 110px;
+height: 40px;
+}
+.normal p{
+font-size:20pt ;
+margin: 0%; 
+}
+
+.buttonBanner {
+  border-width: 2px;
+}
+
+  /*********************************************************************************************************************************************************************************
+  ***********************************************************                 Pokemon Page              ****************************************************************************
+  **********************************************************************************************************************************************************************************/
+
+h2, h3{
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #090909;
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #FFF;
+  font-size: 60px;
+  text-align: center;
+}
+
+.h1Pokemon{
+  font-size: 50pt;
+}
+  
+.h2Pokemon{
+  font-size: 35pt;
+}
+.h3Pokemon{
+  font-size: 35pt;
+}
+
+  /*****************Caught****************/
+.caught{
+  width: 200px;
+  height: 50px;
+  float: right; 
+}
+  .caught p{
+    font-size: 30px;
+  }
+
+
+  /*******************Info-container******/
+.info-container{
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  justify-content: center;
+  max-width: 768px; 
+ }
+
+/*******************Img/Pokemon**********/
+.img-pokemon{
+  background-size: 300px 350px; 
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+  .img-pokemon img{
+    width: 500px;
+  }
+
+
+.type{
+  height: 400px;
+  width: 250px;
+  gap: 20px;  
+}
+  .type h4{
+  font-family: "Itim", cursive;
+  color: #FFCB05;
+  font-size: 45px;
+  }
+
+.category{
+  height: 400px;
+  width: 250px;
+}
+.category h4{
+    font-size: 45px;
+  }
+.category p{
+    font-size: 25px;   
+  }
+  .category  li{
+    font-size: 25px;
+  }
+
+.weight{
+  padding-top: 20px;
+  height: 250px;
+  width: 400px;
+}
+.weight  h4{
+    font-size: 45px;
+  }
+  .weight  p{
+    font-size: 25px;  
+  }
+
+ /******Stats section*****/
+.stats-container{
+width: 700px;
+height: 500px;
+margin: 0 auto;
+margin-top: 25px;
+}
+.stats-container h4{
+  font-size: 45px;
+}
+.h{
+  font-size: 35px;
+}
+.p{
+   font-size: 35px;
+}
+.stats{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  grid-row-gap: 60px;    
+}
+
+/*****Evolutions******************/
+
+.section-evolution{
+  margin-top: 55px;
+  width: 700px;
+  height: 451px;
+  border-radius: 20px;
+  border: 5px solid #FFCB05;
+  background: #000;
+  margin: 0 auto; 
+  margin-top: 50px;
+}
+
+.evolution-container{
+  margin-top: 75px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 1px;
+}
+  .evolution-container p{
+    color: white;
+    text-align: center;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    line-height: normal; 
+  }
+  .evolution-container h5{
+    color:  #FFCB05;
+    text-align: center;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    line-height: normal;
+    }
+
+  .evolution-wrap{
+   display: flex;
+   flex-direction: column; 
+  }
+  
+  .pokemon-image {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .pokemon-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .pokemon-number {
+    font-size: 40px;
+    color: #FFCB05;
+    font-family: "Itim", cursive;
+  }
+  
+  .pokemon-name {
+    font-size: 40px;
+    color: #fff;
+    font-family: "Itim", cursive;
+  }
+  
+  .title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFCB05;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /*********Buttons***********/
+  
+  .buttons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+
+  .next{
+    width: 252px;
+    height: 60px;
+    margin-top: 2em;
+    flex-shrink: 0;
+    background-color: #FFCB05; 
+    color: #000; 
+    border: white;
+    border-radius: 25px; 
+    font-size: 20pt; 
+    font-weight: bold;
+    cursor: pointer; 
+    transition: background-color 0.3s ease;  
+  }
+  
+  .showMore:hover {
+    background-color: black;
+    color:white;
+  }
+}
+
+
+
+/*******************************************************************************************************************************************************************************
+****************************************************************                     MOBILE VERSION                      *******************************************************
+********************************************************************************************************************************************************************************/
+
+
+/**********************************************************************************************************************************************
+************************************************                  Pokedex page               **************************************************
+**********************************************************************************************************************************************/
+
+
+@media only screen and (max-width: 767px) {
+
+  /***************************** Header ***************************/
+
+.headerButtons{
+  height: 210px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 300px;
+  }
+
+#search-bar{
+  background-color: white;
+  border: solid #FFCB05;
+  border-radius:25px;
+  height:3.5em;
+  width:300px;
+}
+
+#search-bar::placeholder {
+  color:#FFCB05;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+   
+.buttonBanner{
+  background-color: #FFCB05;
+  border: solid white;
+  border-radius: 25px;
+  height: 3.5em;
+  width: 200px;
+  margin-left: 50px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  padding: 20px;  
+}
+
+header h1 {
+  font-size: 30pt; 
+}
+
+.heading1{
+margin-top: 2%;
+font-size: 70px;
+}
+
+.hh1{
+  padding-top: 250px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center; 
+}
+
+.card {
+  width: 200px;
+  height:350px;
+ margin-left: 80px  
+}
+
+.wrappokeball{
+  height: 190px;
+}
+.wrappokeball  img{
+    width: 180px;
+    height: 180px;
+  }
+
+.card h2 {
+  margin-top: 0;
+  font-size: 25px;
+}
+
+.card p {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+/**************************  Categories  ************************/
+.categories {
+  gap: 5px;
+  padding-top: 1em;
+}
+
+/******** Grass *************/
+.grass {
+  width: 90px;
+  height: 35px;
+  border: none;
+  border-radius: 25px; 
+}
+.grass p{
+  font-size:18pt ;
+ margin: 0%; 
+}
+
+/******** Poison *************/
+.poison {
+  width: 90px;
+  height: 35px;
+}
+.poison p{
+  font-size:18pt ;
+  margin: 0%; 
+}
+
+/******** Fire *************/
+.fire{
+  width: 90px;
+  height: 35px;
+}
+.fire p{
+  font-size:18pt ;
+  margin: 0%; 
+}
+
+/******** Flying *************/
+.flying{
+  width: 90px;
+  height: 35px;
+}
+.flying p{
+  font-size:18pt ;
+  margin: 0%; 
+}
+
+/******** Water *************/
+.water{
+  width: 90px;
+  height: 35px; 
+}
+.water p{
+  font-size:18pt ;
+  margin: 0%; 
+}
+
+/******** Bug *************/
+.bug{
+  width: 90px;
+  height: 35px;
+}
+.bug p{
+  font-size:18pt ;
+  margin: 0%;  
+}
+
+/******** Normal *************/
+.normal{
+  width: 90px;
+  height: 35px;
+}
+.normal p{
+  font-size:18pt ;
+  margin: 0%;  
+}
+
+  
+/*************************  Display Pokemons    *******************/
+
+h2, h3{
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #090909;
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #FFF;
+  font-size: 60px;
+   text-align: center;
+}
+
+.h1Pokemon{
+  font-size: 35pt;
+}
+
+.h2Pokemon{
+  font-size: 25pt;
+}
+
+.h3Pokemon{
+  font-size: 25pt;
+}
+
+/*****************Caught****************/
+.caught{
+  width: 150px;
+  height: 100px
+}
+  .caught  p{
+    font-size: 20px;
+  }
+
+/*******************Info-container******/
+.info-container{
+  margin-top: 50px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1em;
+  width: 350px; 
+}
+.info-container > div:first-child {
+  grid-row: 2;
+}
+.info-container > div:nth-child(2) {
+  grid-row: 1;
+}
+.info-container > div {
+  margin: 0 auto;
+  text-align: center; 
+  margin-bottom: 30px;
+}
+
+/*******************Img/Pokemon**********/
+.img-pokemon{
+  background-size: 300px 350px; 
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+  .img-pokemon  img{
+    width: 500px;
+  }
+
+.type{
+  background-image: url(/images/Rectangle\ weight.svg);
+  height: 250px;
+  width: 400px;
+  gap: 10px;
+}
+  .type  h4{
+  font-family: "Itim", cursive;
+  color: #FFCB05;
+  font-size: 45px;
+  }
+
+.category{
+  background-image: url(/images/Rectangle\ weight.svg);
+  height: 250px;
+  width: 400px;
+  padding-top: 0%;
+}
+  .category  h4{
+    font-size: 45px;
+  }
+  .category  p{
+    font-size: 25px;   
+  }
+  .category  li{
+    font-size: 25px;
+  }
+
+.weight{
+  padding-top: 20px;
+  height: 250px;
+  width: 400px;
+}
+  .weight  h4{
+    font-size: 45px;
+  }
+  .weight  p{
+    font-size: 25px;  
+  }
+
+/******Stats section*****/
+.stats-container{
+width: 350px;
+height: 800px;
+margin: 0 auto;
+margin-top: 25px;
+}
+.stats-container h4{
+  font-size: 45px;
+ 
+}
+
+.h{
+ 
+  font-size: 35px;
+}
+.p{
+  font-size: 35px;
+}
+
+
+.stats{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 40px;
+  
+}
+
+.stats-total{
+  padding-top: 20px;
+}
+
+
+/*****Evolutions******************/
+
+.section-evolution{
+
+width: 350px;
+height: 450px;
+}
+
+.evolution-container{
+  margin-top: 75px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 1px;
+}
+  .evolution-container p{
+    font-size: 30px;
+    
+  }
+  h5{
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  }
+
+.evolution-wrap{
+ display: flex;
+ flex-direction: column;
+  
+}
+
+
+
+.pokemon-image {
+  width: 100px;
+  height: 100px;
+}
+
+.pokemon-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.pokemon-number {
+  font-size: 30px;
+  color: #FFCB05;
+  font-family: "Itim", cursive;
+ 
+}
+
+.pokemon-name {
+  font-size: 30px;
+  color: #fff;
+  font-family: "Itim", cursive;
+}
+
+
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #FFCB05;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 40px;
+}
+
+/*********Buttons***********/
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto; 
+  width: max-content; 
+
+}
+
+.next{
+  width: 252px;
+  height: 60px;
+  margin-top: 2em;
+  flex-shrink: 0;
+  background-color: #FFCB05; 
+  color: #000; 
+  border: white;
+  border-radius: 25px; 
+  font-size: 20pt; 
+  font-weight: bold;
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+ 
+}
+
+.showMore:hover {
+  background-color: black;
+  color:white;
+}
+}
