@@ -25,7 +25,9 @@
     'GRAD' 0,
     'opsz' 24
   }
-
+ body{
+  background-color:#000 ;
+ }
 
 
 
@@ -42,98 +44,44 @@ header{
   background-size: cover;
   padding: 150px;
   background-position: center center;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat; 
+ 
 }
 
 header h1{
   color:rgb(255, 255, 255);
   font-family: 'pokedex';
-  text-align: left;
-  font-size: 75pt;   
+  text-align: center;
+  font-size: 100pt;  
+  height: 100px;
 }
 
-.buttonHeader{
-  background-color: #000;
-  border: solid #FFCB05;
-  color: #FFCB05;
-  padding: .4em;
-  margin: 1em;
-  border-radius: 5px;
-  font-size: 20pt;
+.text{
+  color: rgb(255, 255, 255);
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  font-size: 20pt;  
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: rgba(255, 203, 5, .5);
+  border-radius: 10px;
+  padding: .7em;
+  
 }
-
-.buttonHeader:hover{
-  background-color:#FFCB05 ;
-  color: #000;
-}
-
 /*****Buttons nav**********/
 .wrapper{
   background-image: url(/images/black.avif);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+
 }
 
-nav{
-  margin-bottom: 10em;
-}
 
-.headerButtons{
-  
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 1em;
-  border: solid #FFCB05;
-  border-radius: 15px;
-  padding: 1em;
-  width: 1251px;
-  height: 50px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-#search-bar{
-  background-color: white;
-  border: solid #FFCB05;
-  border-radius:25px;
-  height:3.5em;
-  width:400px;
-}
 
-#search-bar::placeholder {
-  color:#FFCB05;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-}
-   
-.buttonBanner{
-  background-color: #FFCB05;
-  border: solid white;
-  border-radius: 25px;
-  height: 3.5em;
-  width: 200px;
-  transition: background-color 0.3s, color 0.3s;
-  font-family: "Indie Flower", cursive;
-  font-size: 13pt;
-}
-  
-.buttonBanner:hover {
-  animation: bounce 0.5s ease-in-out;
-}
-  
-  @keyframes bounce {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-5px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
+
+
+
 
 h1{
   color:#FFCB05;
@@ -141,14 +89,12 @@ h1{
   text-align: center;
   padding: 0%;
   font-size: 80pt;
-  margin-bottom: .5em;
-  padding-top: 30px;  
+  padding-top: 10px;  
 }
 
 .heading1{
   color:#FFCB05;
   font-size: 80pt;
-  margin-bottom: 50px;
 }
 
 /*************************  Display Pokemons    *******************/
@@ -157,7 +103,7 @@ h1{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 40px;
+  gap: 40px; 
 }
 
 .card {
@@ -170,7 +116,7 @@ h1{
   overflow: hidden;
   width: 280px;
   height: 450px;
-  cursor: pointer;
+  
 }
 
 .wrappokeball{
@@ -179,7 +125,9 @@ h1{
   height: 270px;
   display: flex;
   justify-content: center;
-  align-items: center;}
+  align-items: center;
+}
+ 
     
   .wrappokeball img{
       width: 3000px;
@@ -197,6 +145,7 @@ h1{
   font-size: 35px;
   text-align: center;
   color: #FFCB05;
+  cursor: pointer;
 }
 
 .card p {
@@ -219,113 +168,14 @@ h1{
   font-family: "Indie Flower", cursive; 
 }
 
-/******** Grass *************/
-.grass {
-  background-color: #9BBE40;
-  border: none;
-  border-radius: 25px;
-  width: 110px;
-  height: 35px;
-  display: inline-block; 
-  color: white;
-  font-family: "Indie Flower", cursive; 
-}
-.grass p{
-  font-size:20pt ;
- margin: 0%; 
- text-align: center;
-}
-
-/******** Poison *************/
-.poison {
-  background-color: #B47BBA;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  width: 110px;
-  height: 35px;
-  display: inline-block;
-  font-family: "Indie Flower", cursive; 
-}
-.poison p{
-  font-size:20pt ;
-  margin: 0%; 
+.type{
+  background-color: 	rgba(92,54,19, .8);
+  width:110px;
+  height:40px;
+  border-radius: 20px;
   text-align: center;
-}
-
-/******** Fire *************/
-.fire{
-  background-color: #EA4B27;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  width: 110px;
-  height: 35px;
-  display: inline-block; 
-}
-.fire p{
-  font-size:20pt ;
-  margin: 0%; 
-}
-
-/******** Flying *************/
-.flying{
-background-color: #88BAD4;
-color: white;
-border: none;
-border-radius: 25px;
-width: 110px;
-height: 35px;
-display: inline-block; 
-}
-.flying p{
-font-size:20pt ;
-margin: 0%; 
-}
-
-/******** Water *************/
-.water{
-background-color: #4192DF;
-color: white;
-border: none;
-border-radius: 25px;
-width: 110px;
-height: 35px;
-display: inline-block; 
-}
-.water p{
-font-size:20pt ;
-margin: 0%; 
-}
-
-/******** Bug *************/
-.bug{
-background-color: #5CB147;
-color: white;
-border: none;
-border-radius: 25px;
-width: 110px;
-height: 35px;
-display: inline-block; 
-}
-.bug p{
-font-size:20pt ;
-margin: 0%; 
-}
-
-/******** Normal *************/
-.normal{
-background-color: #A0A0A0;
-color: white;
-border: none;
-border-radius: 25px;
-width: 110px;
-height: 35px;
-display: inline-block; 
-}
-.normal p{
-font-size:20pt ;
-margin: 0%; 
+  font-family: "Indie Flower", cursive; 
+  font-size: 20pt;
 }
 
   /***********Show more button*****************/
@@ -374,7 +224,6 @@ margin: 0%;
   footer {
     width: 100%;
     background-color: #000;
-    padding: 10px;
     text-align: center;
     color: #FFCB05;
     font-size: 20pt;
@@ -395,7 +244,20 @@ margin: 0%;
   /***********************************************************************************************************************************************************************************************
   ***********************************************************************                 Pokemon Page              ******************************************************************************
   ************************************************************************************************************************************************************************************************/
-.h1Pokemon{
+  .displaypokemon{
+    width: 1200px;
+    height: 670px;
+    background-color: rgba(206, 17, 37, 0.8);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: 1;
+   
+  }
+
+  .h1Pokemon{
   color: #FFCB05;
   font-size: 80pt;
 }
@@ -465,7 +327,7 @@ margin: 0%;
   }
 
 
-.type{
+.typeContainer{
   background-image: url(/images/type.svg);
   background-repeat: no-repeat;
   height: 500px;
@@ -475,8 +337,6 @@ margin: 0%;
   flex-direction: column;
   gap: 30px;
   align-items: center;
-}
-  .type h4{
     font-family: "Itim", cursive;
     color: #FFCB05;
     font-size: 55px;
@@ -496,6 +356,7 @@ margin: 0%;
   gap: 10px;
   align-items: center;
   padding-top: 65px;
+  color: #FFCB05;
 }
     .category h4{
       font-family: "Itim", cursive;
@@ -533,18 +394,8 @@ margin: 0%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-}
-  .weight h4{
     font-family: "Itim", cursive;
-    color: #FFCB05;
-    font-size: 50px;
-    text-align: center;
-    margin-bottom: 0;  
-  }
-
- .weight p{
-    font-family: "Itim", cursive;
-    color:#FFF;
+    color:#FFCB05;
     font-size: 40px;
     text-align: center;   
   }
@@ -557,36 +408,17 @@ margin: 0%;
   border-radius: 5px;
   width: 1450px;
   height: 400px;
-  margin: 0 auto;
   margin-top: 25px;
- }
-
-  .stats-container h4{
-    color: #FFCB05;
-    font-family: Itim;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: normal;
-    padding-bottom: 40px;
-  }
-
-.h{
-  color: #FFCB05;
-  font-family: Itim;
-  font-style: normal;
-  font-weight: 400;
   font-size: 40px;
   line-height: normal;
-}
-.p{
   color: white;
   text-align: center;
   font-family: "Itim", cursive;
   font-weight: 400;
-  font-style: normal;
-  font-size: 40px;
-  line-height: normal;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  grid-row-gap: 60px;  
 }
 
 .stats{
@@ -704,7 +536,7 @@ margin: 0%;
   padding-bottom: 25px;
   }
 
-.next{
+.buttons{
   width: 252px;
   height: 60px;
   margin-top: 2em;
@@ -725,7 +557,290 @@ margin: 0%;
   }
 
 
+
+/******************************************************************************************************************************************************************************************************
+****************************************************************                         * Pokemon javascript *                     ***********************************************************************
+******************************************************************************************************************************************************************************************************/
+
+.each-pokemon{
+  background-image: url(/images/space-1796654_1280.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 1200px;
+  height: 800px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  z-index: 1;
+  overflow: scroll;
+}
+
+.caught-status{
+  width: 300px;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: 100px;
+  color: #FFF;
+  border: 2px solid #FFCB05;
+  border-radius: 25px;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  font-size: 15pt;
+  font-family: "Indie Flower", cursive;
+}
+.weightp, .hd-pokemon, .typesp {
+  display: inline-flex;
+  flex: 1;
+}
+
+.hd-pokemon{
+width: 450px;
+height: 450px;
+background-image: url(/images/pokebola-back.svg);
+border-radius: 500px;
+background-size: cover; 
+background-position: center;
+position: absolute; 
+top: 108%; 
+left: 50%; 
+transform: translate(-50%, -50%);
+opacity: 0.9; 
+}
+
+.name-pokemon{
+color:white;
+font-size: 30pt;
+text-align: center;
+font-family: "Indie Flower", cursive;
+}
+
+.h2Pokemon{
+color:white;
+font-size: 30pt;
+text-align: center;
+font-family: "Indie Flower", cursive;
+}
+
+.h3Pokemon{
+color:#FFCB05;
+font-size: 30pt;
+text-align: center;
+
+}
+/************types*****************/
+
+.types{
+  background-image: url(/images/type.svg);
+  background-repeat: no-repeat;
+  height: 270px;
+  width: 270px;
+  background-size: contain;
+  font-family: "Itim", cursive;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 30px;  
+  margin-left: 100px;
+}
+
+.typesH3{
+  font-family: "Itim", cursive;
+  color:#FFCB05;
+  font-size: 30px;
+  text-align:left;
+  padding-left: 50px;
+   
+}
+
+.typesp{
+ padding-right: 60px;
+   
+}
+
+/**********************height***************/
+.height-container{
+  background-image: url(/images/right-info.svg);
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 300px;
+  background-size: contain;
+  padding-top: 6px;
+  float: right;
+  font-family: "Itim", cursive;
+  color:#ffffff;
+  font-size:25px; 
+
+}
+.height-container h3{
+  font-family: "Itim", cursive;
+  color:#FFCB05;
+  font-size: 30px;
+  padding-top: 60px;
+  text-align:left;
+  padding-left: 50px;
+   
+}
+
+.height-container p{
+  padding-left: 20px;
+}
+/*********************** weight ************/
+.weight-container{
  
+  background-image: url(/images/Rectangle\ weight.svg);
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 300px;
+  background-size: contain;
+  margin: 0 auto;
+  font-family: "Itim", cursive;
+  color:#ffffff;
+  font-size:25px;
+  text-align: center;  
+  margin-top: 10px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.weight-container h3{
+  font-family: "Itim", cursive;
+  color:#FFCB05;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+   
+}
+
+
+.abilities{
+  background-color: #000000;
+  border-radius: 25px;
+  border: 5px solid #FFCB05; 
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.abilities h3{
+color: #FFCB05;
+font-family: "Itim", cursive;
+font-size: 30pt;
+}
+
+
+.ability{
+  margin: 0 auto;
+  font-family: "Itim", cursive;
+  color:#ffffff;
+  font-size: 25pt;
+  text-align: center;
+}
+
+
+/**********Stats section********/
+.statsc{
+
+  font-family: "Itim", cursive;
+  color:#ffffff;
+  font-size: 25pt;
+  text-align: center; 
+  background-color: #000000;
+  border-radius: 25px;
+  border: 5px solid #FFCB05;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.statsp{
+  margin: 0 auto;
+  font-family: "Itim", cursive;
+  color:#ffffff;
+  font-size: 25pt;
+  text-align: center;
+  border-radius: 25px;
+  border-color: 5px solid #FFCB05;
+}
+
+
+
+
+.pokemon-number {
+color: #FFCB05;
+font-family: "Itim", cursive; 
+font-size: 40px;
+}
+
+.pokemon-name {
+font-size: 40px;
+color: #fff;
+font-family: "Itim", cursive;
+}
+
+.title {
+font-size: 50px;
+font-weight: bold;
+color: #FFCB05;
+text-align: center;
+margin-bottom: 20px;
+font-family: "Indie Flower", cursive;
+}
+
+/**************Buttons***************/
+
+
+.close{
+width: 100px;
+height: 30px;
+background-color: #FFCB05; 
+color: #000; 
+border-radius: 25px; 
+font-size: 15pt; 
+font-weight: bold;
+cursor: pointer; 
+transition: background-color 0.3s ease;  
+cursor: pointer; 
+ position: absolute; 
+top:80px;
+  right: 20px;
+}
+
+.close:hover {
+  background-color: #070707; 
+  color:#FFCB05; 
+}
+
+.uncaughtButton{
+  width: 110px;
+  height: 40px; 
+  background-color: #0f0f0f; 
+color:#FFCB05; 
+border-radius: 50px; 
+font-size: 15pt; 
+border:2px solid #FFCB05;
+display: block;
+margin: 0 auto;
+margin-top: 10px;
+cursor: pointer;
+}
+
+.caughtButton{
+  width: 110px;
+  height: 40px; 
+  background-color:#FFCB05; 
+color:#0a0a09; 
+border-radius: 50px; 
+font-size: 15pt; 
+border:2px solid #FFCB05;
+display: block;
+margin: 0 auto;
+margin-top: 10px;
+}
 
 /******************************************************************************************************************************************************************************************************
 ****************************************************************                         * TABLET VERSION *                     ***********************************************************************
@@ -747,40 +862,11 @@ header h1 {
 }
 
   /********************* Buttons nav ************************/
-.headerButtons{
-  width: 700px;
-  height: 170px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 1em;
-  padding: .5em;    
-}
-
-#search-bar{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 100px;
-}
-
 .heading1{
   margin-top: 300px;
 }
 
-.buttonBanner:hover {
-  animation: bounce 0.5s ease-in-out;
-}
-  
-  @keyframes bounce {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-5px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
+
 
 h1{
   color:#FFCB05;
@@ -798,12 +884,13 @@ h1{
 
 .gridContainer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+  margin-left: 50px;
 }
 
 .card {
-  width: 280px;
+  width: 285px;
   height: 450px;  
 }
 
@@ -823,83 +910,6 @@ h1{
 .card p {
   font-size: 25px;
   margin-bottom: 5px;
-}
-
-/**************************  Categories  ************************/
-.categories {
-  gap: 4px;
-  padding-top: 1em;
-  margin: 0 auto;
-}
-/******** Grass *************/
-.grass {
-  width: 110px;
-  height: 40px;
-}
-.grass p{
-  font-size:20pt ;
- margin: 0%; 
-}
-
-/******** Poison *************/
-.poison {
-  width: 110px;
-  height: 40px;
-   
-}
-.poison p{
-  font-size:20pt ;
-  margin: 0%; 
-}
-
-/******** Fire *************/
-.fire{
-  width: 110px;
-  height: 40px; 
-}
-
-.fire p{
-  font-size:20pt ;
-  margin: 0%; 
-}
-
-/******** Flying *************/
-.flying{
-width: 110px;
-height: 40px;
-}
-.flying p{
-font-size:20pt ;
-margin: 0%; 
-}
-
-/******** Water *************/
-.water{
-width: 110px;
-height: 40px; 
-}
-.water p{
-font-size:20pt ;
-margin: 0%; 
-}
-
-/******** Bug *************/
-.bug{
-width: 110px;
-height: 40px;
-}
-.bug p{
-font-size:20pt ;
-margin: 0%; 
-}
-/******** Normal *************/
-.normal{
-width: 110px;
-height: 40px;
-}
-.normal p{
-font-size:20pt ;
-margin: 0%; 
 }
 
 .buttonBanner {
@@ -1128,6 +1138,206 @@ margin-top: 25px;
     background-color: black;
     color:white;
   }
+
+  
+
+/******************************************************************************************************************************************************************************************************
+****************************************************************                         * Pokemon javascript *                     ***********************************************************************
+******************************************************************************************************************************************************************************************************/
+
+.each-pokemon{
+  width: 800px;
+  height: 1150px;
+ 
+}
+
+.caught-status{
+  width: 300px;
+  height: 50px;
+  margin-left: 30px;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 20pt;
+}
+.weightp, .hd-pokemon, .typesp {
+  display: inline-flex;
+  flex: 1;
+}
+
+.hd-pokemon{
+width: 400px;
+height: 400px;
+background-image: url(/images/pokebola-back.svg);
+border-radius: 500px;
+background-size: cover; 
+background-position: center;
+position: absolute; 
+top: 55%; 
+left: 50%; 
+transform: translate(-50%, -50%);
+opacity: 0.9; 
+}
+
+.name-pokemon{
+color:white;
+font-size: 30pt;
+text-align: center;
+font-family: "Indie Flower", cursive;
+}
+
+.h2Pokemon{
+color:white;
+font-size: 30pt;
+text-align: center;
+font-family: "Indie Flower", cursive;
+}
+
+.h3Pokemon{
+color:#FFCB05;
+font-size: 30pt;
+text-align: center;
+
+}
+/************types*****************/
+
+.types{
+  background-image: url(/images/type.svg);
+  background-repeat: no-repeat;
+  height: 270px;
+  width: 270px;
+  background-size: contain;
+  font-family: "Itim", cursive;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 30px;  
+  margin-left: 100px;
+}
+
+.typesH3{
+  font-family: "Itim", cursive;
+  color:#FFCB05;
+  font-size: 30px;
+  text-align:left;
+  padding-left: 50px;
+   
+}
+
+.typesp{
+ padding-right: 60px;
+   
+}
+
+/**********************height***************/
+.height-container{
+  background-image: url(/images/right-info.svg);
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 300px;
+  background-size: contain;
+  padding-top: 6px;
+  float: right;
+  font-family: "Itim", cursive;
+  color:#ffffff;
+  font-size:25px; 
+
+}
+.height-container h3{
+  font-family: "Itim", cursive;
+  color:#FFCB05;
+  font-size: 30px;
+  padding-top: 60px;
+  text-align:left;
+  padding-left: 50px;
+   
+}
+
+.height-container p{
+  padding-left: 20px;
+}
+/*********************** weight ************/
+.weight-container{
+  margin-top: 550px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.weight-container h3{
+  font-family: "Itim", cursive;
+  color:#FFCB05;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+   
+}
+
+.abilities{
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 10px;
+}
+
+
+/**********Stats section********/
+.statsc{
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.statsp{
+  margin: 0 auto;
+  font-family: "Itim", cursive;
+  color:#ffffff;
+  font-size: 25pt;
+  text-align: center;
+  border-radius: 25px;
+  border-color: 5px solid #FFCB05;
+}
+
+
+/**************Buttons***************/
+
+.close{
+width: 150px;
+height: 40px;
+font-size: 20pt; 
+cursor: none; 
+transition: background-color 0.3s ease;  
+
+}
+
+.close:hover {
+  background-color: #070707; 
+  color:#FFCB05; 
+}
+
+.uncaughtButton{
+  width: 110px;
+  height: 40px; 
+  background-color: #0f0f0f; 
+color:#FFCB05; 
+border-radius: 50px; 
+font-size: 15pt; 
+border:2px solid #FFCB05;
+display: block;
+margin: 0 auto;
+margin-top: 10px;
+cursor: pointer;
+}
+
+.caughtButton{
+  width: 110px;
+  height: 40px; 
+  background-color:#FFCB05; 
+color:#0a0a09; 
+border-radius: 50px; 
+font-size: 15pt; 
+border:2px solid #FFCB05;
+display: block;
+margin: 0 auto;
+margin-top: 10px;
+}
 }
 
 
@@ -1546,5 +1756,204 @@ height: 450px;
 .showMore:hover {
   background-color: black;
   color:white;
+}
+
+
+
+/******************************************************************************************************************************************************************************************************
+****************************************************************                         * Pokemon javascript *                     ***********************************************************************
+******************************************************************************************************************************************************************************************************/
+.text{
+  width: 300px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.each-pokemon{
+  background-image: url(/images/space-1796654_1280.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 390px;
+  height: 700px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+ 
+}
+
+.caught-status{
+  width: 200px;
+  height: 40px;
+}
+
+.weightp, .hd-pokemon, .typesp {
+  display: inline-flex;
+  flex: 1;
+}
+
+.hd-pokemon{
+width: 300px;
+height: 300px;
+top: 76%; 
+left: 50%; 
+transform: translate(-50%, -50%);
+}
+
+
+.h2Pokemon{
+font-size: 25pt;
+}
+
+.h3Pokemon{
+font-size: 25pt;
+}
+/************types*****************/
+
+.types{
+  font-size: 25px;
+  padding-top: 30px;  
+  margin-left: 100px;
+  margin-top: 300px;
+}
+
+.typesH3{
+  font-size: 25px; 
+  margin-left: 15px;
+}
+
+.typesp{
+ padding-right: 60px;
+   
+}
+
+/**********************height***************/
+.height-container{
+  background-image: url(/images/right-info.svg);
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 300px;
+  background-size: contain;
+  padding-top: 6px;
+  float: right;
+  font-family: "Itim", cursive;
+  color:#ffffff;
+  font-size:25px; 
+}
+
+.height-container h3{
+  font-size: 25px;
+  padding-top: 60px;
+  padding-left: 50px;
+   
+}
+
+.height-container p{
+  padding-left: 20px;
+}
+/*********************** weight ************/
+.weight-container{
+  font-size:25px;
+  margin-top: 400px;
+  margin-bottom: 0;
+}
+
+.weight-container h3{
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+.abilities{
+  margin-top: 100px;
+  width: 350px;
+}
+
+
+
+/**********Stats section********/
+.statsc{
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.statsp{
+  margin: 0 auto;
+  font-family: "Itim", cursive;
+  color:#ffffff;
+  font-size: 25pt;
+  text-align: center;
+  border-radius: 25px;
+  border-color: 5px solid #FFCB05;
+}
+
+
+
+
+.pokemon-number {
+color: #FFCB05;
+font-family: "Itim", cursive; 
+font-size: 40px;
+}
+
+.pokemon-name {
+font-size: 40px;
+color: #fff;
+font-family: "Itim", cursive;
+}
+
+.title {
+font-size: 50px;
+font-weight: bold;
+color: #FFCB05;
+text-align: center;
+margin-bottom: 20px;
+font-family: "Indie Flower", cursive;
+}
+
+/**************Buttons***************/
+
+
+.close{
+width: 100px;
+height: 30px;
+cursor: none; 
+position: absolute; 
+top:60px;
+right: 20px;
+
+}
+
+.caught-status{
+margin-top: 140px;
+}
+
+.uncaughtButton{
+  width: 110px;
+  height: 40px; 
+  background-color: #0f0f0f; 
+color:#FFCB05; 
+border-radius: 50px; 
+font-size: 15pt; 
+border:2px solid #FFCB05;
+display: block;
+margin: 0 auto;
+margin-top: 10px;
+cursor: pointer;
+}
+
+.caughtButton{
+  width: 110px;
+  height: 40px; 
+  background-color:#FFCB05; 
+color:#0a0a09; 
+border-radius: 50px; 
+font-size: 15pt; 
+border:2px solid #FFCB05;
+display: block;
+margin: 0 auto;
+margin-top: 10px;
 }
 }

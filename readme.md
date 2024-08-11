@@ -31,3 +31,27 @@ I created the page for each Pokemon with the characteristics and the buttons to 
 I created the CSS for the home page and the pages for each Pokemon. I added style in css and made it responsive with media queries.
 
 I got all the information from https://pokeapi.co/about. I got images, names, descriptions, numbers and evolutions.
+
+
+
+## Steps to create the dinamic website
+1. First I followed the provided instructions in class to display the first pokemon, once I confirmed that it worked I started added more functions. I erased the current content that I have in inde.html through java with inner html.
+
+2. Then I added the following instructions
+inside the function display pokemon I get the document from html for the card to display each pokemon in a card, and with the pokeapi I added, name, number and image.
+
+3. After this I Added an eventListener, so when I click on the name of each pokemon, a new page is displayed to show name, abilities, stats, and categories. I create new div and add class to the new divs, the class name was the same that I had in html, in this case I used the same css to display the information. I just changed some classes because I displayed some other information that I did not have, so I have to update that part in css, but using the same design that I had.
+
+3. The next step was adding a close button to close the new page after reading the information, I added this button to the function to display pokemons in the new page.
+
+4. After that point I created a button to check if the pokemon was caught or uncaught, this button was added to the main page, in each pokemon card.
+
+5. I made sure that I have this in the local storage and that once i refresh the website I don't lose any information. I change the color in css for the caught if it's clicked.
+
+6. I added this information in the eventListener to display the new page for each pokemon, I made sure that this information is checked in the local storage, so once I click in the caught button, I don't have to make any refresh to update the information.
+
+7. I change the let cuurent page to 2 to display 2 more pokemons with the show more button.
+
+8. I made sure that all the buttons are working and the website doesn't have any problems with refresh.
+
+

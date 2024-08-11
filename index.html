@@ -16,34 +16,17 @@
         <h1>
             Pokedex
         </h1>
-       <button type="button" class="buttonHeader">Sign Up</button>
-       <button type="button" class="buttonHeader">Log In</button>
     </header>
-
+<main>
    <!--- <div class="wrapper">  -->
-
 <div class="wrapper">
           <!--buttons banner-->
-      
-          <div class="headerButtons">
-            
-              <div class="wrapButton">
-                <button class="buttonBanner" >  Caught</button>
-              </div>
-              <div class="wrapButton">
-                <button class="buttonBanner" > <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m336-280 144-144 144 144 56-56-144-144 144-144-56-56-144 144-144-144-56 56 144 144-144 144 56 56ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg> Uncaught</button> 
-              </div>
-              <div class="searchBanner">
-                <input type="search" id="search-bar" name="search" placeholder="Search by name or number..." autocomplete="on" autofocus>
-              </div>
-              </div> <!--Closes headerButtons-->
-            
-        
-
-       
           <section>
-           <div class="hh1"> <h1 class="heading1">Pokedex</h1></div>
-            <div class="gridContainer">
+            <p class="text">Welcome to the Pokedex. You can check the characteristics of each pokemon clicking on its name. You can also mark each pokemon as caught or uncaught by clicking in the caught button</p>
+    
+
+
+            <div id="gridContainer" class="gridContainer">
                     <!----------------0001 Bulbasaur------------------------->
                     <a href="pokemon.html">
                          <div class="card">  <!--Opens card-->   
@@ -51,13 +34,13 @@
                         <img src="./images/bulbasaur.png" class="imgCard" alt="Bulbasaur"> 
                     </div> <!--Closes wrappokeball-->
                     <p>0001</p>
-                    <h2>Bulbasaur</h2>
+                    <h2 id="name"></h2>
                        <div class="categories"> <!--Opens categories-->
                         <div class="grass">
                             <p>Grass</p>
                         </div> 
                         <div class="poison">
-                            <p>Poison</p>
+                            <p></p>
                         </div>
                     </div><!--Closes categories-->
                     </div> <!--Closes Card-->
@@ -69,7 +52,7 @@
                             <img src="./images/Daco_4612776.png" id="bulbasaur" class="imgCard" alt="Ivysaur"> 
                         </div> <!--Closes wrappokeball-->
                         <p>0002</p>
-                        <h2>Ivysaur</h2>
+                        <h2 id="name">Ivysaur</h2>
                            <div class="categories"> <!--Opens categories-->
                             <div class="grass">
                                 <p>Grass</p>
@@ -87,7 +70,7 @@
                                 <img src="./images/venosaur.png" class="imgCard" alt="Venosaur"> 
                             </div> <!--Closes wrappokeball-->
                             <p>0003</p>
-                            <h2>Venosaur</h2>
+                            <h2 id="name">Venosaur</h2>
                                <div class="categories"> <!--Opens categories-->
                                 <div class="grass">
                                     <p>Grass</p>
@@ -105,7 +88,7 @@
                                     <img src="./images/charmander.png" class="imgCard" alt="Charmander"> 
                                 </div> <!--Closes wrappokeball-->
                                 <p>0004</p>
-                                <h2>Charmander</h2>
+                                <h2 id="name">Charmander</h2>
                                    <div class="categories"> <!--Opens categories-->
                                     <div class="fire">
                                         <p>Fire</p>
@@ -121,7 +104,7 @@
                         <img src="./images/Charmeleon.png" class="imgCard" alt="Charmeleon"> 
                     </div> <!--Closes wrappokeball-->
                     <p>0005</p>
-                    <h2>Charmeleon</h2>
+                    <h2 id="name">Charmeleon</h2>
                        <div class="categories"> <!--Opens categories-->
                         <div class="fire">
                             <p>Fire</p>
@@ -135,7 +118,7 @@
                             <img src="./images/Charizard.png" class="imgCard" alt="Charizard"> 
                         </div> <!--Closes wrappokeball-->
                         <p>0006</p>
-                        <h2>Charizard</h2>
+                        <h2 id="name">Charizard</h2>
                            <div class="categories"> <!--Opens categories-->
                             <div class="fire">
                                 <p>Fire</p>
@@ -156,7 +139,7 @@
                                 <img src="./images/squirtle.png" class="imgCard" alt="Squirtle"> 
                             </div> <!--Closes wrappokeball-->
                             <p>0007</p>
-                            <h2>Squirtle</h2>
+                            <h2 id="name">Squirtle</h2>
                                <div class="categories"> <!--Opens categories-->
                                 <div class="water">
                                     <p>Water</p>
@@ -171,7 +154,7 @@
                                     <img src="./images/wartortle.png" class="imgCard" alt="Wartortle"> 
                                 </div> <!--Closes wrappokeball-->
                                 <p>0008</p>
-                                <h2>Wartortle</h2>
+                                <h2 id="name">Wartortle</h2>
                                    <div class="categories"> <!--Opens categories-->
                                     <div class="water">
                                         <p>Water</p>
@@ -187,7 +170,7 @@
                                     <img src="./images/blastoise.png" class="imgCard" alt="Blastooise"> 
                                 </div> <!--Closes wrappokeball-->
                                 <p>0009</p>
-                                <h2>Blastoise</h2>
+                                <h2 id="name">Blastoise</h2>
                                    <div class="categories"> <!--Opens categories-->
                                     <div class="water">
                                         <p>Water</p>
@@ -201,7 +184,7 @@
                                         <img src="./images/caterpie.png" class="imgCard" alt="Carterpie"> 
                                     </div> <!--Closes wrappokeball-->
                                     <p>0010</p>
-                                    <h2>Caterpie</h2>
+                                    <h2 id="name">Caterpie</h2>
                                        <div class="categories"> <!--Opens categories-->
                                         <div class="bug">
                                             <p>Bug</p>
@@ -216,7 +199,7 @@
                                             <img src="./images/metapod.png" class="imgCard" alt="Metapod"> 
                                         </div> <!--Closes wrappokeball-->
                                         <p>0011</p>
-                                        <h2>Metapod</h2>
+                                        <h2 id="name">Metapod</h2>
                                            <div class="categories"> <!--Opens categories-->
                                             <div class="bug">
                                                 <p>Bug</p>
@@ -249,7 +232,7 @@
                                     <img src="./images/weedle.png" class="imgCard" alt="Weedle"> 
                                 </div> <!--Closes wrappokeball-->
                                 <p>0013</p>
-                                <h2>Weedle</h2>
+                                <h2 id="name">Weedle</h2>
                                    <div class="categories"> <!--Opens categories-->
                                     <div class="bug">
                                         <p>Bug</p>
@@ -266,7 +249,7 @@
                                         <img src="./images/kakuna.png" class="imgCard" alt="Kakuna"> 
                                     </div> <!--Closes wrappokeball-->
                                     <p>014</p>
-                                    <h2>Kakuna</h2>
+                                    <h2 id="name">Kakuna</h2>
                                        <div class="categories"> <!--Opens categories-->
                                         <div class="bug">
                                             <p>Bug</p>
@@ -284,7 +267,7 @@
                                             <img src="./images/beedrill.png" class="imgCard" alt="Beedrill"> 
                                         </div> <!--Closes wrappokeball-->
                                         <p>0014</p>
-                                        <h2>Beedrill</h2>
+                                        <h2 id="name">Beedrill</h2>
                                            <div class="categories"> <!--Opens categories-->
                                             <div class="bug">
                                                 <p>Bug</p>
@@ -302,7 +285,7 @@
                                                 <img src="./images/pidgey.png" class="imgCard" alt="Pedgey"> 
                                             </div> <!--Closes wrappokeball-->
                                             <p>0016</p>
-                                            <h2>Pedgey</h2>
+                                            <h2 id="name">Pedgey</h2>
                                                <div class="categories"> <!--Opens categories-->
                                                 <div class="normal">
                                                     <p>Normal</p>
@@ -321,7 +304,7 @@
                                     <img src="./images/Pidgeotto.png" class="imgCard" alt="Pidgeotto"> 
                                 </div> <!--Closes wrappokeball-->
                                 <p>0017</p>
-                                <h2>Pidgeotto</h2>
+                                <h2 id="name">Pidgeotto</h2>
                                    <div class="categories"> <!--Opens categories-->
                                     <div class="normal">
                                         <p>Normal</p>
@@ -338,7 +321,7 @@
                                         <img src="./images/pidgeot.png" class="imgCard" alt="Pidgeot"> 
                                     </div> <!--Closes wrappokeball-->
                                     <p>0018</p>
-                                    <h2>Pidgeot</h2>
+                                    <h2 id="name">Pidgeot</h2>
                                        <div class="categories"> <!--Opens categories-->
                                         <div class="normal">
                                             <p>Normal</p>
@@ -356,7 +339,7 @@
                                             <img src="./images/rattata.png" class="imgCard" alt="Rattata"> 
                                         </div> <!--Closes wrappokeball-->
                                         <div><p>0019</p></div>
-                                        <h2>Rattata</h2>
+                                        <h2 id="name">Rattata</h2>
                                            <div class="categories"> <!--Opens categories-->
                                             <div class="normal">
                                                 <p>Normal</p>
@@ -371,7 +354,7 @@
                                                 <img src="./images/raticate.png" class="imgCard" alt="Raticate"> 
                                             </div> <!--Closes wrappokeball-->
                                             <p>0020</p>
-                                            <h2>Raticate</h2>
+                                            <h2 id="name">Raticate</h2>
                                                <div class="categories"> <!--Opens categories-->
                                                 <div class="normal">
                                                     <p>Normal</p>
@@ -389,11 +372,11 @@
 
                                     </div> <!--Closes wrap-container-->
                 
-            
+                                </main>
                 <footer>
                     &copy; 2024 Karla Murillo
                   </footer>
             
-             
+             <script src="javascript/script.js"></script>
             </body>
             </html>
