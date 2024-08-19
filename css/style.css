@@ -104,6 +104,7 @@ h1{
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 40px; 
+  margin-left: 40px;
 }
 
 .card {
